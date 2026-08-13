@@ -2,24 +2,20 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View style={styles.nonSpecified}>
-    
-    {{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View style={styles.container}>
+      <Text style={styles.text}>INDEX</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  light: {},
-  dark: {},
-  nonSpecified: {
-    color: "#000000",
-    background: "#9BA1A6",
+  container: {
+    backgroundColor: "#9BA1A6",
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  text: {
+    color: "#000000"
   },
 });
